@@ -1,0 +1,24 @@
+name: DoorAndBed
+version: 1.0
+main: org.noiprasit.doorandbed.DoorAndBed
+description: Example on how to place door and bed
+commands:
+  makedoor:
+    aliases: [makedoor]
+    description: place a door
+    usage: type /makedoor
+    permission: makedoor.use
+    permission-usage: You do not have appropriate permission... bad!
+  makebed:
+    aliases: [makebed]
+    description: place a bed
+    usage: type /makebed
+    permission: makebed.use
+    permission-usage: You do not have appropriate permission... bad!
+permissions:
+  makedoor.use:
+    description: permission to use makedoor command
+    default: op
+  makebed.use:
+    description: permission to use makebed command
+    default: op
